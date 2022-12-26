@@ -1,0 +1,41 @@
+cluster.name: CustomerSuccess
+
+node.name: elk_server
+
+#this is the spare drive for Tiger
+path.data: /index/lib/elasticsearch
+path.logs: /index/log/elasticsearch
+
+bootstrap.memory_lock: true
+
+# this 0.0.0.0 ia suggested and works in 7.6.2 install
+network.host: 0.0.0.0
+http.port: 9200
+
+discovery.type: 'single-node'
+
+indices.query.bool.max_clause_count: 8192
+search.max_buckets: 250000
+
+action.destructive_requires_name: 'true'
+
+reindex.remote.whitelist: '*:*'
+
+#Xpack comes free with the free license
+xpack.monitoring.enabled: 'true'
+xpack.monitoring.collection.enabled: 'true'
+xpack.monitoring.collection.interval: 30s
+
+xpack.security.enabled: 'true'
+xpack.security.audit.enabled: 'false'
+
+# machine learning is not licensed for free version
+node.ml: 'false'
+xpack.ml.enabled: 'false'
+
+xpack.watcher.enabled: 'false'
+
+xpack.ilm.enabled: 'true'
+
+xpack.sql.enabled: 'true'
+
