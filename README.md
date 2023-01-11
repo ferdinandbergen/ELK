@@ -310,4 +310,4 @@ go to WIndows machine that test that \\elk_server\inbound\ can be reached and if
 ```./logstash -w 1 -f /index/inbound/config/maincookie.conf```
 
 
-  [![HitCount](https://hits.dwyl.com/ferdinandbergen/ELK.svg?style=flat-square)](http://hits.dwyl.com/ferdinandbergen/ELK)
+  [![HitCount](https://hits.dwyl.com/ferdinandbergen/ELK.svg?style=flat-square&show=unique)](http://hits.dwyl.com/ferdinandbergen/ELK)
