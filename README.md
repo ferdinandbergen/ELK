@@ -2,7 +2,9 @@
 
 Co-Created with [@bennwitt](https://github.com/bennwitt)  
 
-New changes are that we added Logstash, SAMBA, and NGINX
+## Overview  
+@bennwitt and I were in need of a toolset that could analyze disparate logs from multiple sources.  We built this tool mainly to analyze video streaming logs from multipel Windows servers (IIS logs) and evolved the tool to include Limelight CDN log analysis, Conviva API logs, as well as AppNeta logs to analyze website and video streaming behaviors under load.  
+the setup that follows is the installation portion of this tool using Elastic Search, Kibana, and Logstash (ELK).  
 
 
 ## How To Install Elasticsearch and Kibana on Ubuntu Linux
